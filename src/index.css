@@ -138,7 +138,7 @@ header p {
 .detail-inner {
   background: black;
   margin-left: 10px;
-  height: 90%;
+  height: 95%;
   width: 300px;
   border-radius: 10px;
   padding: 15px;
@@ -146,6 +146,15 @@ header p {
   flex-direction: column;
   gap: 25px;
   box-shadow: 2px 2px 20px #535bf2;
+  overflow-y: auto;
+}
+
+.detail-inner::-webkit-scrollbar{
+  background-color: black;
+  width: 0.1px;
+}
+.detail-inner::-webkit-scrollbar-track{
+  background-color: black;
 }
 
 .detail-inner img {

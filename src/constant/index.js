@@ -10,7 +10,7 @@ export const options = {
     limit: '300'
   },
   headers: {
-    'X-RapidAPI-Key': '9e3aa64bb5msh539aa13f31eb687p15bd32jsne1db6cb4fd9e',
+    'X-RapidAPI-Key': 'e9c16c084emshd6bbf6324cb96b6p1cb160jsn86b2c4eb08e7',
     'X-RapidAPI-Host': 'flight-radar1.p.rapidapi.com'
   }
 };

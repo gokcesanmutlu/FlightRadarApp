@@ -30,7 +30,7 @@ const ListView = ({openModal}) => {
   };
 
   return (
-    <div className="p-4  ">
+    <div className="p-4">
       <table className="table table-dark table-hover mt-5">
         <thead>
           <tr>
