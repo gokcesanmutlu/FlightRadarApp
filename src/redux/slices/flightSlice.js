@@ -16,11 +16,11 @@ const flightSlice = createSlice({
         // gelen path değerini store'a aktar
         setPath: (state, action) => {
             //eldeki veriyi kütüphnenin talep ettiği formata çevirme
-            state.path =  action.payload.map((i)=>[i.lat, i.lng])
+            state.path = action.payload.map((i) => [i.lat, i.lng])
         },
-        clearPath: (state, action) => {
-            state.path = action.payload;
-        }
+        clearPath: (state) => {
+            state.path = [];
+        },
     },
     extraReducers: (builder) => {
         // get flights'in penging durumunda çalışıcak olan fonk. 'un sadece state'i alması yeterli, yapacağı tek sey isLoadingi true'ya çekmek
