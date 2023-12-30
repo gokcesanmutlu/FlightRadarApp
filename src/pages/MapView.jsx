@@ -13,8 +13,8 @@ const MapView = ({ openModal }) => {
   //objenin içi boşken ctrl-space yapınca, koyabileceğiniz ayarları size listeler
   const planeIcon = icon({
     iconUrl: "/plane-i.png",
-    iconSize:[25,25],
-   })
+    iconSize: [25, 25],
+  })
 
   return (
     <MapContainer center={[38.795069, 35.469991]} zoom={6} scrollWheelZoom={true}>
@@ -25,8 +25,8 @@ const MapView = ({ openModal }) => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {state.flights.map((flight) => (
-        <Marker icon={planeIcon} position={[flight.lat, flight.lng]}>
+      {state.flights.map((flight, i) => (
+        <Marker key={i} icon={planeIcon} position={[flight.lat, flight.lng]}>
           <Popup>
             <div className="popup">
               <span>Flight Code:{flight.code}</span>

@@ -13,17 +13,17 @@ function App() {
   const [detailId, setDetailId] = useState(null);
 
   // uçuş verilerini birden fazla bileşende kullanacağımız için onu store'da tutmamız gerek
-  useEffect(() => {
-    setInterval(() =>
-      dispatch(getFlights())
-      , 5000);
-
-  }, []);
-
   // useEffect(() => {
-  //   dispatch(getFlights())
-  // }, [])
-  
+  //   setInterval(() =>
+  //     dispatch(getFlights())
+  //     , 5000);
+
+  // }, []);
+
+  useEffect(() => {
+    dispatch(getFlights())
+  }, [])
+
 
   const openModal = (id) => {
     setIsModalOpen(true);

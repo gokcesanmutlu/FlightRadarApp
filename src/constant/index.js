@@ -17,11 +17,9 @@ export const options = {
 
 //flight Detail
 export const options2 = {
-  method: 'GET',
-
   headers: {
     'X-RapidAPI-Key': 'e9c16c084emshd6bbf6324cb96b6p1cb160jsn86b2c4eb08e7',
     'X-RapidAPI-Host': 'flight-radar1.p.rapidapi.com'
-    }
+  }
 };
 
